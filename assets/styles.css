@@ -482,7 +482,8 @@ blockquote.pull cite { display: block; margin-top: 10px; font-family: var(--font
 }
 .flashcard:focus-visible { outline: 2px solid var(--secondary); outline-offset: 4px; border-radius: var(--radius-lg); }
 .flashcard__inner {
-  position: relative; width: 100%; height: 100%;
+  /* the inner is a <span>: without display:block its 100% sizing collapses */
+  display: block; position: relative; width: 100%; height: 100%;
   transition: transform .5s ease; transform-style: preserve-3d;
 }
 .flashcard--flipped .flashcard__inner { transform: rotateY(180deg); }
