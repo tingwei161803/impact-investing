@@ -5,6 +5,9 @@
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://impact-investing.peteraim.com/</loc>
+  </url>
+  <url>
     <loc>https://impact-investing.peteraim.com/bcorp.html</loc>
   </url>
   <url>
@@ -15,9 +18,6 @@
   </url>
   <url>
     <loc>https://impact-investing.peteraim.com/glossary.html</loc>
-  </url>
-  <url>
-    <loc>https://impact-investing.peteraim.com/</loc>
   </url>
   <url>
     <loc>https://impact-investing.peteraim.com/people.html</loc>
@@ -33,5 +33,35 @@
   </url>
   <url>
     <loc>https://impact-investing.peteraim.com/yunus.html</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/bcorp.html</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/concepts.html</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/flashcards.html</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/glossary.html</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/people.html</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/quiz.html</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/taiwan.html</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/world.html</loc>
+  </url>
+  <url>
+    <loc>https://impact-investing.peteraim.com/zh-Hant/yunus.html</loc>
   </url>
 </urlset>
