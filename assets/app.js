@@ -4,8 +4,11 @@
 
      1. reads the current page from <body data-page="...">,
      2. picks a renderer from RENDERERS by that page's `layout`,
-     3. paints it into <main id="page"> and wires its interactions,
-     4. registers an onLang() callback so a language switch repaints the body.
+     3. paints it into <main id="page"> and wires its interactions.
+
+   It paints in the page's own language (LDW.state.lang, which comes from
+   <html lang>) and never repaints for a language change: switching language
+   is a navigation to the twin URL, not an in-page redraw.
 
    Layouts: hub | editorial | glossary | quiz | flashcards
    The `editorial` layout is a block system (p/h3/ul/quote/note/facts/stats/
@@ -444,7 +447,7 @@
     };
 
     /* =====================================================================
-       RENDER the current page; re-runnable on language switch
+       RENDER the current page
        ===================================================================== */
     function render() {
       teardowns.forEach(function (fn) { try { fn(); } catch (e) {} });
@@ -459,13 +462,6 @@
       if (w) w(p);
     }
 
-    L.onLang(function () {
-      var openSlug = location.hash.slice(1);
-      var dlg = L.dialog();
-      var wasOpen = dlg && dlg.open && dialogItems[openSlug];
-      render();
-      if (wasOpen && dialogItems[openSlug]) openItem(openSlug);
-    });
     render();
   }
 

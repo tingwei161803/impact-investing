@@ -137,6 +137,7 @@ h1, h2, h3, .serif { font-family: var(--font-display); font-weight: 500; letter-
   min-width: 40px; height: 40px; padding: 0 8px;
   border: none; border-radius: 999px; background: transparent;
   color: var(--on-surface-variant); font: inherit; cursor: pointer;
+  text-decoration: none;   /* some icon buttons are links (language, footer) */
   transition: background .15s ease;
 }
 .icon-btn:hover { background: var(--surface-container-high); }
@@ -512,6 +513,12 @@ blockquote.pull cite { display: block; margin-top: 10px; font-family: var(--font
 .footer p { margin: 0 0 12px; }
 .footer__links { display: flex; justify-content: center; gap: 8px; }
 .footer__link { color: var(--on-surface-variant); }
+
+/* the other language, reachable without JavaScript */
+.lang-alt-link a {
+  color: var(--on-surface-variant); font-size: 13px;
+  text-decoration: none; border-bottom: 1px solid var(--outline-variant);
+}
 
 /* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
